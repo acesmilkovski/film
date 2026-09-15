@@ -340,31 +340,33 @@
 
     /* Responsive */
     @media (max-width: 600px) {
-      body { padding: 1.2rem 1rem 0; }   /* ← bottom padding removed (was 1rem) */
-      .header h1 { font-size: 1.5rem; }
-      .movie-grid { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1rem; }
-      .movie-title { font-size: 0.9rem; }
-      .modal-content { width: 100%; }
-      .modal-header h3 { font-size: 0.95rem; }
-      #footer-frame {
-    height: 200px;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;             /* ← space below on mobile */
+  body { padding: 1.2rem 1rem 0; }
+  .header h1 { font-size: 1.5rem; }
+  .movie-grid { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1rem; }
+  .movie-title { font-size: 0.9rem; }
+  .modal-content { width: 100%; }
+  .modal-header h3 { font-size: 0.95rem; }
+  #footer-frame {
+    height: 220px;
+    margin-top: 2rem;
   }
-    }
+}
     /* ---------- FOOTER FRAME – FULL WIDTH (clean) ---------- */
+/* ---------- FOOTER FRAME – FULL WIDTH (clean) ---------- */
 #footer-frame {
   display: block;
   width: 100vw;
-  height: 280px;
+  height: 320px;
   border: none;
-  margin-top: 2rem;
-  margin-bottom: 2rem;                 /* ← space below the footer */
+  margin-top: 3rem;
+  margin-bottom: 0;                     /* no gap below – sits at bottom */
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
-  background: #0b0f15;
+  background: #0b0f15;                  /* matches body to avoid flash */
   box-sizing: border-box;
-  margin-bottom: 2rem;
+  /* subtle separation from content above */
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 -10px 30px -15px rgba(0, 0, 0, 0.8);
 }
   </style>
 </head>
