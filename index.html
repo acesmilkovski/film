@@ -346,20 +346,23 @@
       .movie-title { font-size: 0.9rem; }
       .modal-content { width: 100%; }
       .modal-header h3 { font-size: 0.95rem; }
-      #footer-frame { height: 200px; margin-top: 1.5rem; }
+      #footer-frame {
+    height: 200px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;             /* ← space below on mobile */
+  }
     }
     /* ---------- FOOTER FRAME – FULL WIDTH (clean) ---------- */
 #footer-frame {
   display: block;
   width: 100vw;
-  height: 280px;               /* adjust as needed */
+  height: 280px;
   border: none;
-  margin: 2rem 0 0 0;
-  padding: 0;
-  /* pull to the very edges of the viewport */
+  margin-top: 2rem;
+  margin-bottom: 2rem;                 /* ← space below the footer */
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
-  background: #0b0f15;         /* avoid white flash */
+  background: #0b0f15;
   box-sizing: border-box;
 }
   </style>
